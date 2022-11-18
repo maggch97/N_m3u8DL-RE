@@ -16,7 +16,7 @@ namespace N_m3u8DL_RE.Entity
         public long RDownloaded { get; set; } = 0L;
         private int _zeroSpeedCount = 0;
         public int LowSpeedCount { get => _zeroSpeedCount; }
-        public bool ShouldStop { get => LowSpeedCount >= 20; }
+        public bool ShouldStop { get => LowSpeedCount >= 4; }
 
         ///////////////////////////////////////////////////
 
